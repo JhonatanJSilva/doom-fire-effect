@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="charset" content="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Doom Fire Effect</title>
+      </head>
+      <body>
+    
+        <center>
+          <h1>Doom Fire Effect</h1>
+          <a href="https://www.youtube.com/watch?v=fxm8cadCqbs&t=692s&ab_channel=FilipeDeschamps">Inspired by the video of Filipe Deschamps</a>
+          <div id="fireCanvas"></div>
+          <div class="margin">
+            <button type="button" class="btn btn-dark" onclick=decreaseFireSource()>-</button>
+            <button type="button" class="btn btn-dark" onclick=destroyFireSource()>Min Fire</button>
+            <button type="button" class="btn btn-dark" onclick="createFireSource()">Max Fire</button>
+            <button type="button" class="btn btn-dark" onclick="increaseFireSource()">+</button>
+          </div>
+          <div class="margin">
+            <button type="button" class="btn btn-dark" onclick="toggleDebugMode()">Toggle Debug Mode</button>
+          </div>
+          <div class="margin">
+            <span>Change de wind!</span>
+          </div>
+          <div class="margin">
+            <button type="button" class="btn btn-dark" onclick="changeWindDirection(0)"> < </button>
+            <button type="button" class="btn btn-dark" onclick="changeWindDirection(1)"> No wind </button>
+            <button type="button" class="btn btn-dark" onclick="changeWindDirection(2)"> > </button></div>
+        </center>
+    
+        <script src="fire.js"></script>
+    
+      </body>
+</html>
